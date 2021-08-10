@@ -1,6 +1,4 @@
-﻿ 
-
-namespace ECommerce.Business.Constants.Messages
+﻿namespace ECommerce.Business.Constants.Messages
 {
     public static class ProductValidationMessage
     {

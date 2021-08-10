@@ -10,6 +10,5 @@ namespace ECommerce.Business.ValidationRules.FluentValidation
             RuleFor(c =>c.ProductId).NotEmpty().WithMessage(CartItemValidationMessage.ProductIdNotEmpty);
             RuleFor(c => c.Quantity).GreaterThanOrEqualTo(0).WithMessage(CartItemValidationMessage.QuantityNotNegative);           
         }
-
     }
 }

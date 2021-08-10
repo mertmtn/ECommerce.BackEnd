@@ -6,7 +6,6 @@ namespace ECommerce.Business.Abstract
     public interface ICartItemService
     {
         IResult Add(CartItem cartItem);
-
         IResult Delete(CartItem cartItem);
     }
 }

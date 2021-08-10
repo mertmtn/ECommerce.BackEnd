@@ -8,16 +8,11 @@ namespace ECommerce.Entity.Concrete
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }       
-
+        public string Id { get; set; } 
         public string CategoryId { get; set; }
-
         public string ProductName { get; set; }
-
         public decimal UnitPrice { get; set; }
-
         public int UnitsInStock { get; set; }
-
         public bool IsActive { get; set; }
     }
 }

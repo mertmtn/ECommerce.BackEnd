@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\Rdmbs\" />
+    <Compile Remove="DataAccess\Rdmbs\**" />
+    <EmbeddedResource Remove="DataAccess\Rdmbs\**" />
+    <None Remove="DataAccess\Rdmbs\**" />
   </ItemGroup>
 
   <ItemGroup>

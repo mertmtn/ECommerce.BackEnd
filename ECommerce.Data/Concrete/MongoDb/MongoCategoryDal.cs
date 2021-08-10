@@ -8,7 +8,7 @@ namespace ECommerce.Data.Concrete.MongoDb
     {
         public MongoCategoryDal(IMongoDbContext context) : base(context)
         {
-        }
 
+        }
     }
 }

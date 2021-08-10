@@ -6,11 +6,9 @@ namespace ECommerce.Data.Concrete.MongoDb
 {
     public class MongoProductDal : MongoEntityRepositoryBase<Product>, IProductDal
     {
-
         public MongoProductDal(IMongoDbContext context) : base(context)
         {
 
-        }
-        
+        }        
     }
 }

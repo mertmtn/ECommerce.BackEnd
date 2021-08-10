@@ -37,7 +37,5 @@ namespace ECommerce.Business.DependencyResolvers
                     Selector = new AspectInterceptorSelector()
                 }).SingleInstance();
         }
-
-
     }
 }

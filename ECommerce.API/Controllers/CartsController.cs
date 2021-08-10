@@ -1,7 +1,6 @@
 ﻿using ECommerce.Business.Abstract;
 using ECommerce.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;  
-
  
 namespace ECommerce.API.Controllers
 {
@@ -10,7 +9,6 @@ namespace ECommerce.API.Controllers
     public class CartsController : ControllerBase
     {
         private ICartService _cartService;
-
         public CartsController(ICartService cartService)
         {
             _cartService = cartService;
@@ -21,8 +19,6 @@ namespace ECommerce.API.Controllers
         {
             var result = _cartService.Add(cart);
             return StatusCode(result.Success ? 200 : 400, result);
-        }
-
- 
+        } 
     }
 }

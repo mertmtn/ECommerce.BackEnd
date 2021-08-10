@@ -9,7 +9,6 @@ namespace ECommerce.API.Controllers
     public class CartItemsController : ControllerBase
     {
         private ICartItemService _cartItemService;
-
         public CartItemsController(ICartItemService cartItemService)
         {
             _cartItemService = cartItemService;

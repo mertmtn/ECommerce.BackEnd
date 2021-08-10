@@ -34,25 +34,20 @@ namespace ECommerce.Business.Concrete
             _categoryDal.Update(category, updateFilterExpression);
             return new SuccessResult(CategoryMessage.CategoryUpdatedSuccessfully);
         }
-
         public IResult Delete(Category category)
         {
             Expression<Func<Category, bool>> deleteFilterExpression = x => x.Id == category.Id;
             _categoryDal.Delete(category, deleteFilterExpression);
             return new SuccessResult(CategoryMessage.CategoryDeletedSuccessfully);
         }
-
         public IDataResult<List<Category>> GetAll()
         {
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
         }
-
         public IDataResult<Category> GetById(string categoryId)
         {
             Expression<Func<Category, bool>> getfilterExpression = x => x.Id == categoryId;
             return new SuccessDataResult<Category>(_categoryDal.Get(getfilterExpression));
         }
-
-
     }
 }

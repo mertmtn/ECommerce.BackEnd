@@ -8,7 +8,6 @@ namespace ECommerce.Data.Concrete.MongoDb
     public class MongoDbContext: IMongoDbContext
     {
         private MongoDbSettings mongoDbSettings;
-
         private IMongoDatabase _db { get; set; }
         private MongoClient _mongoClient { get; set; }        
         

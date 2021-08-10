@@ -15,14 +15,12 @@ namespace ECommerce.Business.Concrete
     public class CartItemManager : ICartItemService
     {
         private ICartItemDal _cartItemDal;
-        private IProductService _productService;       
-
+        private IProductService _productService;
         public CartItemManager(ICartItemDal cartItemDal, IProductService productService)
         {
             _cartItemDal = cartItemDal;
             _productService = productService;           
         }
-
 
         [ValidationAspect(typeof(CartItemValidator), Priority = 1)]
         public IResult Add(CartItem cartItem)

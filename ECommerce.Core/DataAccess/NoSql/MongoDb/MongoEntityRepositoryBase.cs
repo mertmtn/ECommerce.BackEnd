@@ -11,7 +11,6 @@ namespace ECommerce.Core.DataAccess.NoSql.MongoDb
     {
         protected readonly IMongoDbContext Context;
         protected IMongoCollection<TEntity> DbSet;
-
         protected MongoEntityRepositoryBase(IMongoDbContext context)
         {
             Context = context;
@@ -26,8 +25,8 @@ namespace ECommerce.Core.DataAccess.NoSql.MongoDb
         public void Delete(TEntity entity, Expression<Func<TEntity, bool>> filter)
         {
             DbSet.DeleteOne(Builders<TEntity>.Filter.Where(filter));
-        }
-        
+        }        
+
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             return DbSet.Find(Builders<TEntity>.Filter.Where(filter)).FirstOrDefault();

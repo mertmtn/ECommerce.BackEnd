@@ -9,7 +9,6 @@ namespace ECommerce.API.Controllers
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;
-
         public ProductsController(IProductService productService)
         {
             _productService = productService;

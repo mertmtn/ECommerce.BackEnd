@@ -10,7 +10,6 @@ namespace ECommerce.UnitTest
     public class CartOperationTest
     {
         private static CartItemManager _cartItemService;
-
         public CartOperationTest()
         {
             var mongoDbContext = new MongoDbContext(new MongoDbSettings { ConnectionString = "mongodb://localhost:27017", Database = "ECommerce" });
@@ -53,6 +52,5 @@ namespace ECommerce.UnitTest
 
             Assert.IsTrue(result.Success);
         }
-
     }
 }

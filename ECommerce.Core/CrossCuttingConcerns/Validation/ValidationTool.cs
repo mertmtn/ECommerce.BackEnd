@@ -13,7 +13,6 @@ namespace ECommerce.Core.CrossCuttingConcerns.Validation
             {
                 throw new ValidationException(result.Errors);
             }
-
         }
     }
 }

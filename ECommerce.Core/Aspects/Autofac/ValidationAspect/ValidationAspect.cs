@@ -20,10 +20,6 @@ namespace ECommerce.Core.Aspects.Autofac.ValidationAspect
 
             _validatorType = validatorType;
         }
-
-        
-
-
         protected override void OnBefore(IInvocation invocation)
         {
             var validator = (IValidator)Activator.CreateInstance(_validatorType);

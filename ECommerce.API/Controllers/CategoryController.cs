@@ -9,7 +9,6 @@ namespace ECommerce.API.Controllers
     public class CategoryController : ControllerBase
     {
         private ICategoryService _categoryService;
-
         public CategoryController(ICategoryService categoryService)
         {
             _categoryService = categoryService;

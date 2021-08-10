@@ -13,7 +13,6 @@ namespace ECommerce.Business.Concrete
         {
             _cartDal = cartItem; 
         }
-
         public IResult Add(Cart cart)
         {
             _cartDal.Add(cart);

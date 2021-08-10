@@ -52,6 +52,5 @@ namespace ECommerce.Business.Concrete
             Expression<Func<Product, bool>> getfilterExpression = x => x.Id == productId;
             return new SuccessDataResult<Product>(_productDal.Get(getfilterExpression));
         }
-
     }
 }

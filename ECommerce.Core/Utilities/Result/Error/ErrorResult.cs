@@ -12,7 +12,6 @@ namespace ECommerce.Core.Error
         {
 
         }
-
         public ErrorResult() : base(false)
         {
 

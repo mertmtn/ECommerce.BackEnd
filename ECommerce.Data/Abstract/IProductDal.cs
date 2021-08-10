@@ -1,5 +1,4 @@
-﻿
-using ECommerce.Core.DataAccess;
+﻿using ECommerce.Core.DataAccess;
 using ECommerce.Entity.Concrete; 
 
 namespace ECommerce.Data.Abstract
